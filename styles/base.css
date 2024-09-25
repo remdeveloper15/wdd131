@@ -58,7 +58,7 @@ main
     
 }
 
-section h1
+section h2
 {
     background-color: rgb(23, 78, 112);
     text-align: center;
@@ -86,7 +86,7 @@ section h1
     grid-template-rows: auto auto;
 }
 
-.box2 h2
+.box2 h1
 {
     text-align: center;
     grid-column: 1/3;
