@@ -55,7 +55,7 @@ main
     grid-template-columns: 60% 40%;
     gap: 5px;
     margin: 10px;
-    
+
 }
 
 section h2
@@ -127,10 +127,6 @@ footer
     background-color: rgb(23, 78, 112);
     text-align: center;
     padding: 20px;
-}
-
-footer span
-{
     color: white;
     font-family: 'Gowun Batang', serif;
     font-weight: 400;
@@ -138,11 +134,11 @@ footer span
     font-size: 15px;
 }
 
-footer p 
+footer span
 {
     color: yellow;
     font-family: 'Gowun Batang', serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 10px;
 }
