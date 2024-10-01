@@ -1,0 +1,35 @@
+@media (min-width: 37.5em) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+
+    figure {
+        margin: 10px;
+    }
+}
