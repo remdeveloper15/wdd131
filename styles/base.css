@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight:550;
+    font-style: normal;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 25px;
+}
+
+p {
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+a {
+    font-size: 15px;
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header {
+    display: grid;
+}
+
+header span{
+    font-size: 25px;
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    background-color: #3DF5DB;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    background-color: #3D99F5;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+
+header nav a:hover {
+    background-color: #3DF5DB;
+}
+
+main {
+    margin: 0;
+    display: flex;
+}
+
+main img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid gray;
+}
+
+section {
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+section ul {
+    list-style-position: inside;
+    padding: 80px; 
+}
+
+
+section h1{
+    background-color: #3D99F5;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+article {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #3DF5DB;
+    padding: 20px;
+}
