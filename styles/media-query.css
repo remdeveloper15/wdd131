@@ -1,0 +1,23 @@
+body {
+    font-family: "Robot", sans-serif;
+}
+
+header, main, footer {
+    max-width: 640px;
+    text-align: center;
+    margin: 1rem auto;
+    border: 1rem solid aqua;
+    padding: auto;
+    background-color: aqua;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}

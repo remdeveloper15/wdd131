@@ -1,0 +1,13 @@
+@media screen and (min-width: 500px){
+    header {
+        color: aliceblue;
+        background-color: black;
+        border: 1rem solid black;
+    }
+
+    main {
+        display: flex;
+    
+    }
+
+}
