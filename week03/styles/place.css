@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-bottom: 1.2rem;
+    text-align: center;
+    background-color: white;
+}
+
+header h1 {
+    background-color: #B22222;
+    padding: 1.5rem;
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 1.5rem;
+    background-color: #B22222;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #B22222;
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: whitesmoke;
+}
+
+input {
+    all: unset;
+    flex: 1;
+}
+
+label {
+    width: 150px;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.data {
+    text-align: center;
+    background-color: white;
+    padding: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.data img {
+    background-color: white;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.data h2 {
+    padding-bottom: 2rem;
+}
+
+@media (min-width:1000px ){
+    main {
+        position: relative;
+        text-align: center;
+    }
+
+    main .data {
+        position: absolute;      
+        top: 50%;                 
+        left: 50%;               
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 50%;
+    }
+
+    main .data img {
+        background-color: transparent;
+    }
+
+    .data h2::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #B22222;
+        margin: 0.5rem auto 0;
+        border-radius: 2px;
+        
+    }
+}
