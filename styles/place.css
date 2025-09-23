@@ -1,3 +1,7 @@
+:root {
+    --main-color: #B22222;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@ header {
 }
 
 header h1 {
-    background-color: #B22222;
+    background-color: var(--main-color);
     padding: 1.5rem;
     color:white;
     font-family: "Montserrat", sans-serif;
@@ -24,13 +28,13 @@ img {
     height: auto;
     display: block;
     padding-bottom: 1.5rem;
-    background-color: #B22222;
+    background-color: var(--main-color);
 }
 
 
 footer {
     text-align: center;
-    background-color: #B22222;
+    background-color: var(--main-color);
     padding: 2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -107,7 +111,7 @@ section div {
         display: block;
         width: 50px;
         height: 3px;
-        background-color: #B22222;
+        background-color: var(--main-color);
         margin: 0.5rem auto 0;
         border-radius: 2px;
         
