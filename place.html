@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Franco">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Country Page">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Country Page</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Japan
+        </h1>
+    </header>
+    <main>
+        <div>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/japan-large.webp">
+                <source media="(min-width: 600px)" srcset="images/japan-small.webp">
+                <img src="images/japan-small.webp" alt="Japan">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>
+                Data
+            </h2>
+            <section>
+                <div>
+                    <label for="area">Area:</label>
+                    <input type="text" id="area" name="area">
+                </div>
+                <div>
+                    <label for="population">Population:</label>
+                    <input type="text" id="population" name="population">
+                </div>
+                <div>
+                    <label for="capital">Capital:</label>
+                    <input type="text" id="capital" name="capital">
+                </div>
+                <div>
+                    <label for="languages">Languages:</label>
+                    <input type="text" id="languages" name="languages">
+                </div>
+                <div>
+                    <label for="currency">Currency:</label>
+                    <input type="text" id="currency" name="currency">
+                </div>
+                <div>
+                    <label for="time">Time Zone:</label>
+                    <input type="text" id="time" name="time">
+                </div>    
+                <div>
+                    <label for="calling">Calling Code:</label>
+                    <input type="text" id="calling" name="calling">
+                </div>
+                <div>
+                    <label for="internet">Internet TLD:</label>
+                    <input type="text" id="internet" name="internet">
+                </div>
+            </section>
+            <h2>
+                Weather
+            </h2>
+            <img src="images/1530374_weather_day_sand_sandstorm_sun_icon.png" alt="Weather">
+            <section>
+                <div>
+                    <label for="temp">Temperature:</label>
+                    <input type="text" id="temp" name="temp">
+                </div>
+                <div>
+                    <label for="conditions">Conditions:</label>
+                    <input type="text" id="conditions" name="conditions">
+                </div>
+                <div>
+                    <label for="wind">Wind:</label>
+                    <input type="text" id="wind" name="wind">
+                </div>
+                <div>
+                    <label for="wchill">Wind Chill:</label>
+                    <input type="text" id="wchill" name="wchill">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id="currentyear"></p>
+        <p><span id="lastModified">Last Modification: </span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
