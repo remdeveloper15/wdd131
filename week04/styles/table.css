@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    box-shadow :0 0 10px hsl(0, 0%, 50%);
+    margin: 0 auto;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+
+thead th:not(:first-child) {
+    background-color: gray;
+}
+
+tbody tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+caption {
+    padding: 1rem;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+}
