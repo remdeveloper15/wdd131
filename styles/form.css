@@ -83,7 +83,8 @@ label {
 
 select, 
 input[type="date"],
-input[type="text"]{
+input[type="text"],
+textarea{
     padding: .75rem;
     width: 100%;
     max-width: 400px;
@@ -124,7 +125,7 @@ input[type="text"]{
     margin-right: 10px;
 }
 
-.review input[type="text"]{
+.review textarea{
     padding-bottom: 5rem;
     font-size: .9rem;
 }
