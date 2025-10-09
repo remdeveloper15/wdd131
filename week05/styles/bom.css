@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100hv;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Acme", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+main {
+    margin: 1rem auto;
+    border: 1px solid gray;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+}
+
+input, button {
+    padding: 0.5rem;
+}
+
+.delete {
+    width: fit-content;
+}
+
+.list {
+    padding: 0.5;
+}
+
+ul {
+    margin: 1rem;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media  only screen and (min-width: 32.5rem) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 320px;
+    }
+    
+}
