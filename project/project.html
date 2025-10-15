@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Franco">
+    <meta name="description" content="The official website for San Jose de Ancon Parish. San Jose de Ancon is a town of Santa Elena Province, the first oil camp in Ecuador.">
+    <title>San Jose de Ancon Parish</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="#">
+                <img src="images/san_jose_de_ancon_logo.webp" alt="san_jose_de_ancon_logo">
+            </a>
+            <button type="button" id="menu"></button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COMUNITY & PEOPLE</a></li>
+                <li><a href="#">PARISH GOVERMENT</a></li>
+                <li><a href="#">EXPLORE & ENJOY</a></li>
+                <li><a href="#">SERVICES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🟢 NUEVO BLOQUE: sección principal dinámica -->
+    <main id="hero">
+        <div class="hero-text" id="heroText">
+            <!-- Texto dinámico (se inserta con JS) -->
+        </div>
+        <!-- 🟢 NUEVAS imágenes con lazy loading -->
+        <img src="images/imagen1.webp" loading="lazy" alt="Dawn in San José de Ancón" class="lazy-image" hidden>
+        <img src="images/imagen2.webp" loading="lazy" alt="Morning in San José de Ancón" class="lazy-image" hidden>
+        <img src="images/imagen3.webp" loading="lazy" alt="Afternoon in San José de Ancón" class="lazy-image" hidden>
+        <img src="images/imagen4.webp" loading="lazy" alt="Night in San José de Ancón" class="lazy-image" hidden>
+        <!-- 🟢 NUEVAS imágenes para móvil -->
+        <img src="images/imagen5.webp" loading="lazy" alt="Dawn in San José de Ancón (mobile)" class="lazy-image-mobile" hidden>
+        <img src="images/imagen6.webp" loading="lazy" alt="Morning in San José de Ancón (mobile)" class="lazy-image-mobile" hidden>
+        <img src="images/imagen7.webp" loading="lazy" alt="Afternoon in San José de Ancón (mobile)" class="lazy-image-mobile" hidden>
+        <img src="images/imagen8.webp" loading="lazy" alt="Night in San José de Ancón (mobile)" class="lazy-image-mobile" hidden>
+    </main>
+    <!-- 🟢 FIN NUEVO BLOQUE -->
+
+    <footer>
+        <div class="foot1">
+            <div class="social_media">
+                <h1>FEATURES</h1>
+                <a href="#"><img src="images/service-svgrepo-com.svg" alt=""><span>CONTACT US</span></a>
+                <a href="#"><img src="images/img-svgrepo-com.svg" alt=""><span>MEDIA ROOM</span></a>
+                <a href="#"><img src="images/news-svgrepo-com.svg" alt=""><span>NEWS</span></a>
+                <a href="#"><img src="images/avatar-svgrepo-com.svg" alt=""><span>AUTHORITY</span></a>
+            </div>
+
+            <div class="social_media">
+                <h1>CONNECT</h1>
+                <a href="#"><img src="images/facebook-svgrepo-com.svg" alt=""><span>FACEBOOK</span></a>
+                <a href="#"><img src="images/instagram-svgrepo-com.svg" alt=""><span>INSTAGRAM</span></a>
+                <a href="#"><img src="images/X_logo_2023_original.svg" alt=""><span>X INC.</span></a>
+            </div>
+        </div>
+
+        <div class="foot2">
+            <h1 id="year"></h1>
+            <p><span id="lastMod">Last Modification:</span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/project.js" defer></script>
+</body>
+</html>
