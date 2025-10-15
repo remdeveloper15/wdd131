@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Franco">
+    <meta name="description" content="Send us a letter to comunicate your feedback.">
+    <title>San Jose de Ancon Parish</title>
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 🟢 HEADER -->
+    <header>
+        <div class="header-top">
+            <a href="project.html">
+                <img src="images/san_jose_de_ancon_logo.webp" alt="San José de Ancón logo">
+            </a>
+            <button type="button" id="menu"></button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COMMUNITY & PEOPLE</a></li>
+                <li><a href="#">PARISH GOVERNMENT</a></li>
+                <li><a href="#">EXPLORE & ENJOY</a></li>
+                <li><a href="#">SERVICES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <h1>
+                CONTACT US
+            </h1>
+            <form action="thanks.html" method="get">
+                <fieldset>
+                    <legend>
+                            SUBJECT
+                        </legend>
+                    <label>
+                        <select name="subject" id="subject" required>
+                            <option value="" disabled selected hidden>
+                                Please select one...
+                            </option>
+                            <option value="feedback" id="feedback">
+                                Feedback
+                            </option>
+                            <option value="report" id="report">
+                                Report
+                            </option>
+                            <option value="request" id="request">
+                                Request
+                            </option>
+                            <option value="complaint" id="complaint">
+                                Complaint
+                            </option>
+                            <option value="other" id="other">
+                                Other
+                            </option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        FISRT NAME
+                        <span class="span">
+                            (Optional)
+                        </span>
+                    </legend>
+                    <label>
+                        <input type="text" name="name" id="name">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        LAST NAME
+                        <span class="span">
+                            (Optional)
+                        </span>
+                    </legend>
+                    <label>
+                        <input type="text" name="name" id="name">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                        <legend>
+                            PHONE NUMBER
+                        </legend>
+                    <label>
+                        <input type="tel" name="phone" id="phone" placeholder="1235551234"
+                        required>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>
+                            EMAIL
+                    </legend>
+                    <label>
+                        <input type="email" name="email" id="phone" placeholder="someone@gmail.com" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        DATE
+                    </legend>
+                    <label>
+                        <input type="date" name="date" id="date" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        MESSAGE
+                    </legend>
+                    <label>
+                        <textarea name="letter" id="letter" placeholder="Please write your letter..."
+                        required></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="SEND">
+            </form>
+    </main>
+
+    <!-- 🟢 FOOTER -->
+    <footer>
+        <div class="foot1">
+            <div class="social_media">
+                <h1>FEATURES</h1>
+                <a href="form.html"><img src="images/service-svgrepo-com.svg" alt=""><span>CONTACT US</span></a>
+                <a href="#"><img src="images/img-svgrepo-com.svg" alt=""><span>MEDIA ROOM</span></a>
+                <a href="#"><img src="images/news-svgrepo-com.svg" alt=""><span>NEWS</span></a>
+                <a href="#"><img src="images/avatar-svgrepo-com.svg" alt=""><span>AUTHORITY</span></a>
+            </div>
+
+            <div class="social_media">
+                <h1>CONNECT</h1>
+                <a href="#"><img src="images/facebook-svgrepo-com.svg" alt=""><span>FACEBOOK</span></a>
+                <a href="#"><img src="images/instagram-svgrepo-com.svg" alt=""><span>INSTAGRAM</span></a>
+                <a href="#"><img src="images/X_logo_2023_original.svg" alt=""><span>X INC.</span></a>
+            </div>
+        </div>
+
+        <div class="foot2">
+            <h1 id="year"></h1>
+            <p><h1 id="lastMod">Last Modification:</h1></p>
+        </div>
+    </footer>
+
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>

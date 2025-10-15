@@ -1,9 +1,6 @@
 :root {
     --primary-color: #F8F9F4;
     --secondary-color: #EDE2B9;
-    --third-color: #85C1E6;
-    --fourth-color: #CCE3EF;
-    --fith-color: #F8F3E9;
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Roboto", sans-serif;
 }
@@ -15,27 +12,24 @@
     box-sizing: border-box;
 }
 
+/* BASE TYPO*/
 h1, h2, h3, a, button {
     font-family: var(--primary-font);
     font-weight: 600;
     font-size: 1rem;
 }
-
 p, span {
     font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: .8rem;
+    font-family: .8rem;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: .5rem;
-    gap: 1rem;
     background: var(--primary-color);
-    color: black;
     position: relative;
 }
 
@@ -52,16 +46,15 @@ header img {
     margin-left: 1rem;
 }
 
-/* NAV MOBILE */
+/* NAV */
 header nav {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transform: translateY(-10px);
-    transition: max-height 0.5s ease, opacity 0.4s ease, transform 0.4s ease;
+    transition: all 0.4s ease;
     width: 100%;
     text-align: left;
-    padding: 0;
     margin-left: 2rem;
 }
 
@@ -79,69 +72,30 @@ header nav ul {
     gap: 2rem;
 }
 
-header nav ul li a , .social_media a{
+header nav ul li a, footer a{
     text-decoration: none;
     color: black;
     transition: opacity 0.3s ease;
 }
 
-header nav ul li a:hover, .social_media a:hover{
+header nav ul li a:hover, footer a:hover{
     opacity: 0.6;
 }
 
-/* BOTÓN MENU */
+/* NAV BUTTON */
 header button {
     padding: 1rem;
     border: none;
-    background-color: transparent;
-    color: black;
+    background: transparent;
     font-size: 1.5rem;
-    border-radius: .5rem;
     cursor: pointer;
-    transition: opacity 0.3s ease;
 }
-
-header button:hover {
-    opacity: 0.6;
-}
-
-header button::before {
-    content: "☰";
-}
-
-header button.open::before {
-    content: "✕";
-}
+header button::before { content: "☰"; }
+header button.open::before { content: "✕"; }
 
 /* ================= MAIN ================= */
 
-/* ================= HERO ================= */
 
-/* 🔹 El fondo se cambia dinámicamente según hora y dispositivo */
-#hero {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 1.5rem 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    font-family: var(--primary-font);
-    font-size: 1.5rem;
-    max-width: 80%;
-}
 
 /* ================= FOOTER ================= */
 footer { 
